@@ -2,6 +2,7 @@ import React from 'react'
 import { BiSearch } from "react-icons/bi";
 import { useDispatch } from 'react-redux';
 import { toggleMenu } from '../utils/appSlice';
+import {AiOutlineMenu} from  "react-icons/ai";
 const Head = () => {
   const dispatch = useDispatch();
   const toggleMenuHandler = ()=>{
@@ -9,8 +10,8 @@ const Head = () => {
   }
   return (
     <div className='grid grid-flow-col p-3 m-2 shadow-lg'>
-        <div className='flex col-span-1'>
-            <img src='https://rueeazy.github.io/youtube-clone/Assets/hamburger-icon.png' alt='hambarger img' className="h-12   hover:bg-gray-200  rounded-full cursor-pointer"  onClick={()=>toggleMenuHandler()}/>
+        <div className='flex col-span-1 '>
+            <AiOutlineMenu className="   mt-4 mx-4 hover:bg-gray-200 rounded-2xl cursor-pointer"onClick={()=> toggleMenuHandler()}/>
             <a href='/'>
             <img src='https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg' alt='youtube logo' className='h-12'/>
             </a>
