@@ -4,7 +4,7 @@ import Button from './Button'
 const buttonList = ["All","Gaming","Songs", "Live","Shorts","Computer Science" ,"Dp","Tree", "Cricket","Foody","Oggy & Cockroaches"];
 const ButtonList = () => {
   return (
-    <div className='flex justify-center'>{
+    <div className='flex justify-center flex-wrap'>{
       buttonList.map((buttonName) => (
         <Button name = {buttonName}  key= {buttonName}/>
         
