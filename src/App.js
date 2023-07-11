@@ -7,6 +7,7 @@ import MainCointainer from "./components/MainCointainer";
 import WatchPage from "./components/WatchPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Practice from "./components/Practice";
+import Demo from "./components/Demo";
 // Head
 // Body
 //   Sidebar
@@ -43,6 +44,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/practice",
     element: <Practice />,
+  },
+  {
+    path: "/demo",
+    element: <Demo/>,
   },
 ]);
 

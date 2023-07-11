@@ -60,7 +60,7 @@ const Head = () => {
         <div className="">
           <input
             type="text"
-            className="px-5 w-2/3  border border-gray-500 p-2  rounded-l-full outline-blue-300"
+            className="px-5 w-2/3  border border-gray-500 p-2  rounded-l-full outline-blue-200"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             onFocus={() => setShowSuggestion(true)}
