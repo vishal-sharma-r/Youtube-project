@@ -11,6 +11,9 @@ const Sidebar = () => {
       <Link to="/">
         <h1 className="font-bold">Home</h1>
       </Link>
+      <Link to ={"/practice"}>
+      <h1 className="font-bold ">Practice</h1>
+      </Link>
       <h1 className="font-bold ">Shorts</h1>
       <h1 className="font-bold ">Videos</h1>
       <h1 className="font-bold ">Live</h1>

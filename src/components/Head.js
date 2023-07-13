@@ -41,12 +41,14 @@ const Head = () => {
     dispatch(toggleMenu());
   };
   return (
-    <div className="grid grid-flow-col p-3 m-2 shadow-lg bg-white sticky top-0 left-0 w-full h-[70px] z-50 ">
+    <div className="grid grid-flow-col p-3 m-2 shadow-lg bg-white sticky top-0 left-0  h-[70px] z-50 ">
       <div className="flex col-span-1 ">
+        <div className=" rounded-full hover:bg-gray-200 border border-none ">
         <AiOutlineMenu
-          className="   mt-4 mx-4 hover:bg-gray-200 rounded-2xl cursor-pointer"
+          className="   mt-4 mx-4  cursor-pointer "
           onClick={() => toggleMenuHandler()}
         />
+        </div>
         <a href="/">
           <img
             src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg"

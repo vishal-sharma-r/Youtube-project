@@ -14,12 +14,12 @@ const WatchPage = () => {
     dispatch(closeMenu());
   }, []);
   return (
-    <div className="flex flex-col px-20 py-4 w-full content-center">
+    <div className="flex flex-col px-2  w-full content-center">
       <div className="flex w-full">
         <div>
         <iframe
-          width="750"
-          height="400"
+          width="800"
+          height="450"
           src={"https://www.youtube.com/embed/" + searchParams.get("v")}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
