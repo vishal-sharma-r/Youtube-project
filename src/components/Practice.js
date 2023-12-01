@@ -11,10 +11,11 @@ const Practice = () => {
         <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Company retreats</div>
         <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
         <p class="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
+       <p>Herei am vishal sharma so i can show how to code</p>
       </div>
     </div>
   </div>
   )
 }
 
-export default Practice
+export default Practice;

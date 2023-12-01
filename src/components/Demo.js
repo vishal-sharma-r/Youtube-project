@@ -33,6 +33,7 @@ const Demo = () => {
         <h1 className="mt-4 font-bold text-xl">{text}</h1>
       </div>
     </div>
+    
   );
 };
 

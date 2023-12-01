@@ -5,8 +5,10 @@ import { toggleMenu } from "../utils/appSlice";
 import { AiOutlineMenu } from "react-icons/ai";
 import { YOUTUBE_SEARCH_API } from "../utils/constants";
 import { cacheResults } from "../utils/searchSlice";
+import { Search } from "lucide-react";
+
 const Head = () => {
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState();
   const [suggestion, setSuggesion] = useState([]);
   const [showSuggestion, setShowSuggestion] = useState(false);
   const searchCache = useSelector((store) => store.search);
@@ -43,11 +45,11 @@ const Head = () => {
   return (
     <div className="grid grid-flow-col p-3 m-2 shadow-lg bg-white sticky top-0 left-0  h-[70px] z-50 ">
       <div className="flex col-span-1 ">
-        <div className=" rounded-full hover:bg-gray-200 border border-none ">
-        <AiOutlineMenu
-          className="   mt-4 mx-4  cursor-pointer "
+        <div
+          className=" rounded-full hover:bg-gray-200 border border-none cursor-pointer"
           onClick={() => toggleMenuHandler()}
-        />
+        >
+          <AiOutlineMenu className="   mt-4 mx-4   " />
         </div>
         <a href="/">
           <img
@@ -77,8 +79,13 @@ const Head = () => {
             <ul>
               {suggestion.map((s) => (
                 <li key={s} className="py-2 shadow-md flex">
-                  {" "}
-                  🔍 {s}
+                  <Search
+                    size={16}
+                    color="#171616"
+                    strokeWidth={0.5}
+                    className="mt-1 mx-3"
+                  />{" "}
+                  {s}
                 </li>
               ))}
             </ul>
